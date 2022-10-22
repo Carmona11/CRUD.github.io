@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+}
+
+.header {
+    font-family: 'Montserrat', sans-serif;
+}
