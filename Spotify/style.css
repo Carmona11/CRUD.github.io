@@ -1,0 +1,369 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    width: 1170px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#logo {
+    height: 41.89px;
+    padding-left: 15px;
+}
+
+.nav-content ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+    width: 461.36px;
+    justify-content: space-around;
+}
+
+.nav-content a,
+.nav-content p {
+    color: white;
+    font-weight: bold;
+}
+
+#perfil {
+    height: 100%;
+    width: 126.89px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#perfil div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(https://miro.medium.com/max/4800/1*U1bZj0G5JnoMzT6FE_Knyg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.navlink :hover {
+    color: #1ed760;
+}
+
+.main {
+    width: 100%;
+    height: 799.64px;
+    background-image: url(https://wwwmarketing.scdn.co/static/images/td-1000/1x-hero-card-background-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-1 {
+    width: 1237px;
+    height: 687.64px;
+    background-color: #202F72;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+}
+
+.content-1-izq {
+    height: 591.64px;
+    width: 50%;
+}
+
+.content-1-izq h1 {
+    font-size: 88.0179px;
+    color: #C5F0C9;
+    font-weight: bold;
+}
+
+.content-1-izq p {
+    font-size: 30.8107px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+#main-bottoms {
+    display: flex;
+    height: 62px;
+    width: 100%;
+    margin: 20px 0px 32px;
+    justify-content: flex-start;
+}
+
+#empezar {
+    width: 130px;
+    height: 48px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+#ver-planes {
+    width: 151.64px;
+    height: 52px;
+    border: 1px solid white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+a>#ver-planes :hover {
+    font-size: 18px;
+}
+
+#empezar p {
+    font-size: 14px;
+    color: black;
+    font-weight: 1000;
+}
+
+#ver-planes p {
+    font-size: 14px;
+    font-weight: 1000;
+}
+
+.terminos {
+    text-decoration: underline;
+    font-size: 16px;
+    height: 21px;
+    color: white;
+}
+
+.content-1-der {
+    height: 591.64px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.img1 {
+    margin-left: 24px;
+    width: 100%;
+    height: 514.64px;
+    border: 10px solid rgb(197, 240, 201);
+    border-radius: 20px;
+    background-image: url(https://wwwmarketing.scdn.co/static/images/td-1000/1x-hero-card-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo2 {
+    width: 154px;
+    height: 40px;
+    background-image: url(https://wwwmarketing.scdn.co/static/images/td-1000/1x-hero-card-premium-logo.png);
+}
+
+
+
+
+
+
+.content2 {
+    width: 100%;
+    height: 542.11px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(25, 20, 20) -30px, rgba(0, 0, 0, 0) 100px), linear-gradient(to top, rgb(25, 20, 20) -30px, rgba(0, 0, 0, 0) 100px), -webkit-image-set(url(https://wwwmarketing.scdn.co/static/images/td-1000/1x-upsell-fallback-768w-cx234kjv.jpg) 1x, url(https://wwwmarketing.scdn.co/static/images/td-1000/2x-upsell-fallback-768w-cx234kjv.jpg) 2x);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 37%;
+}
+
+.content2 article {
+    width: 1205px;
+    height: 542.11px;
+    padding: 75px 0px;
+}
+
+.content2 h2 {
+    color: white;
+    font-size: 114.5px;
+}
+
+.content2 h2:nth-child(2) {
+    color: #C5F0C9;
+}
+
+.content2 h3 {
+    width: 723px;
+    margin-top: 15px 0px 0px;
+    font-size: 30.915px;
+    color: white;
+}
+
+.content3 {
+    width: 100%;
+    height: 1278.61px;
+    background-color: #202F72;
+    padding: 0px 72px;
+    display: flex;
+    justify-content: center;
+}
+
+.content3 article {
+    width: 1205px;
+    height: 1278.61px;
+    padding: 75px 0px;
+}
+
+.title3 span {
+    color: white;
+    font-size: 110.5px;
+    width: 100%;
+    font-weight: bold;
+}
+
+
+.img3 {
+    width: 1205px;
+    height: 578.3px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    border: 12px solid rgb(197, 240, 201);
+    border-radius: 20px;
+    background-image: url(https://wwwmarketing.scdn.co/static/images/td-1000/1x-horizontal-description-desktop-jsdflj2jk.jpg);
+    background-size: cover;
+}
+
+.content3-des {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 1205px;
+}
+
+.des3 {
+    width: 380.34px;
+    height: 170px;
+}
+
+.content3-des h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content3-des p {
+    margin: 16px 0px 0px;
+    font-size: 28px;
+}
+
+.content4 {
+    width: 100%;
+    height: 977.31px;
+    background: linear-gradient(180deg, #C5F0C9 65%, #121212 35%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content4 h2 {
+    font-size: 105.5px;
+    width: 1205px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.price1 {
+    height: 508px;
+    width: 401.8px;
+    background-color: #202F72;
+    box-shadow: 0px 0px 56px -5px rgba(0, 0, 0, 0.75);
+    border-radius: 25px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price1-cont {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.img4 {
+    height: 51px;
+    width: 160px;
+    background-image: url(https://wwwmarketing.scdn.co/static/images/td-1000/premium-logo-ewafewfd.svg);
+    background-repeat: no-repeat;
+}
+
+#price1-p {
+    width: 337.02px;
+    height: 164px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 16px 0px 48px;
+}
+
+#empezar2 {
+    height: 48px;
+    width: 130px;
+    background-color: #C5F0C9;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#empezar2 p {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.price1-cont a {
+    font-size: 11px;
+    color: white;
+    text-decoration: underline;
+    margin-top: 16px;
+}
+
+.content5 {
+    width: 100%;
+    height: 1108.34px;
+    background-color: #121212;
+    padding: 0px 72px;
+}
+ 
