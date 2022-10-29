@@ -91,17 +91,19 @@ header i:hover {
 }
 
 .main-content {
-    width: 50%;
     color: wheat;
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    min-width: 600px;
 
 }
 
+
+
 .main-content h2 {
     font-size: 5em;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 .main-content p {
@@ -226,19 +228,19 @@ form input {
 }
 
 #signup {
-width: 120px;
-background-color: #eea903;
+    width: 120px;
+    background-color: #eea903;
 }
 
 #signup:hover {
-background-color: blue;
-color: wheat;
+    background-color: blue;
+    color: wheat;
 }
 
 footer {
     height: 30vh;
     background-color: #021a26;
-    color: wheat; 
+    color: wheat;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -246,6 +248,35 @@ footer {
 }
 
 .innerf {
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1240px) {
+    .right {
+        display: none;
+    }
+
+    .main-content {
+        width: 600px;
+        font-size: 0.8rem;
+    }
+
+    .nav {
+        width: 50%;
+    }
+
+    header {
+        flex-direction: row-reverse;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+.second-content {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 }
