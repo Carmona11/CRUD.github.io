@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(http://cdn.cnn.com/cnnnext/dam/assets/140722171457-rooftop-bars-11-skye-bar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-attachment: fixed;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    height: 10vh;
+}
+
+.nav {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    align-items: center;
+}
+
+
+.left ul,
+.right ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+}
+
+.nav-center {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    height: 50%;
+    background-image: url(https://github.com/Carmona11/Carmona11.github.io/blob/8fae21037db69a16210b447b72d204e846d8bf30/Media/logo-white-R.png?raw=true);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+}
+
+header a,
+header h1 {
+    color: whitesmoke;
+}
+
+header a:hover {
+    color: #eea903;
+    text-decoration: underline;
+}
+
+header i:hover {
+    color: #eea903;
+    text-decoration: underline;
+}
+
+.main-content {
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    min-width: 600px;
+
+}
+
+
+
+.main-content h2 {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.main-content p {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.main-content a {
+    color: antiquewhite;
+    font-size: 2.5em;
+    margin-top: 50px;
+}
+
+.main-content a:hover {
+    color: #eea903;
+    text-decoration: underline;
+}
+
+.second-content {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(9, 9, 63);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blog {
+    height: 65%;
+    width: 400px;
+    background-color: #eea903;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog:hover {
+    transform: translateY(-30px);
+    transition: transform 0.5s ease 0.5s;
+}
+
+.blog .service {
+    height: 70%;
+    width: 100%;
+    background-color: orange;
+}
+
+.food {
+    background-image: url(https://media.timeout.com/images/103950270/image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.drinks {
+    background-image: url(https://img.freepik.com/premium-photo/refreshing-iced-cold-moscow-mule-cocktail-with-lime-pineapple-dark-background_633077-1334.jpg?w=2000);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.music {
+    background-image: url(https://storyv.net/wp-content/uploads/2018/12/new-york-by-thrillist.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog h3 {
+    margin-top: 25px;
+    font-size: 2em;
+}
+
+.t-content {
+    height: 80vh;
+    background-color: #021a26;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.t-left {
+    height: 80%;
+    width: 50%;
+    background-image: url(https://img.theculturetrip.com/1440x/smart/wp-content/uploads/2018/08/c2h2aa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.t-right {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.t-right h3 {
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+.form {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+form input {
+    font-size: 25px;
+    margin: 0 30px;
+    border-radius: 10px;
+}
+
+#signup {
+    width: 120px;
+    background-color: #eea903;
+}
+
+#signup:hover {
+    background-color: blue;
+    color: wheat;
+}
+
+footer {
+    height: 30vh;
+    background-color: #021a26;
+    color: wheat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infof {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 20%;
+}
+
+.innerf ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    color: white;
+}
+
+.innerf a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    color: white;
+}
+
+.innerf a:hover {
+color: #eea903;
+}
+
+
+.fleft {
+    height: 100%;
+}
+
+
+.fleft ul {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-around;
+    font-size: 16px;
+    color: white;
+    margin: 5px;
+    height: 100%;
+    
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1240px) {
+    .right {
+        display: none;
+    }
+
+    .main-content {
+        width: 600px;
+        font-size: 0.8rem;
+    }
+
+    .nav {
+        width: 50%;
+    }
+
+    header {
+        flex-direction: row-reverse;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .second-content {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
