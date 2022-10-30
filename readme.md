@@ -18,3 +18,6 @@ DESPLIEGUE
  Colocar descripción dentro del repositorio
 ENTREGA A TIEMPO
  Entregar a tiempo el proyecto.
+ 
+ El proyecto es un rooftop ficticio, donde se ofrecen servicios de coctelería y eventos.
+ La idea es completar los links faltantes y elaborar con JS un sistema de reservas.
