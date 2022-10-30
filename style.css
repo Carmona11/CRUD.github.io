@@ -247,10 +247,58 @@ footer {
     align-items: center;
 }
 
-.innerf {
+.infof {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    width: 20%;
 }
+
+.innerf ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    color: white;
+}
+
+.innerf a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    color: white;
+}
+
+.innerf a:hover {
+color: #eea903;
+}
+
+
+.fleft {
+    height: 100%;
+}
+
+
+.fleft ul {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-around;
+    font-size: 16px;
+    color: white;
+    margin: 5px;
+    height: 100%;
+    
+}
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1240px) {
     .right {
@@ -274,9 +322,9 @@ footer {
 
 @media only screen and (max-width: 700px) {
 
-.second-content {
-    flex-direction: column;
-    justify-content: space-around;
-}
+    .second-content {
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
 }
