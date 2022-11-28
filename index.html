@@ -5,109 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e497b1cfce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic&family=Nunito&display=swap"
-        rel="stylesheet">
-    <title>Reforma's Rooftop</title>
+    <title>Portfolio Manager</title>
 </head>
 
 <body>
-    <section class="main">
-        <header>
-            <nav class="nav left">
-                <ul>
-                    <li><a href="#">Our history</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Booking</a></li>
-                </ul>
-            </nav>
-            <div class="nav-center">
-                <div id="logo"></div>
-                <h1>by Reforma</h1>
-            </div>
-            <div class="nav right">
-                <ul>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </header>
-
-        <div class="main-content">
-            <h2>This is Reforma's Rooftop</h2>
-            <p>A place where you can enjoy your inner freedom. Visit us to live a unique experience.</p>
-            <a href="#">Book a table</a>
-        </div>
-    </section>
-
-    <section class="second-content">
-        <div class="blog">
-            <div class="service food"></div>
-            <h3>Food</h3>
-        
-        </div>
-        <div class="blog">
-            <div class="service drinks"></div>
-            <h3>Drinks</h3>
-        
-        </div>
-        <div class="blog">
-            <div class="service music"></div>
-            <h3>Music</h3>
-          
-        </div>
-    </section>
-
-    <section class="t-content">
-        <div class="t-left"></div>
-        <div class="t-right">
-            <h3>At the highest point in London</h3>
-            <p>In our installations you'll enjoy a moment of peace, watching the sunset at the rythm of the music.</p>
-        </div>
-    </section>
-
-    <section class="form">
-        <h2>¡Sign up and don't miss our next events!</h2>
-        <form action="">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Lastname">
-            <input type="email" placeholder="Email">
-            <input id="signup" type="submit" value="Sign up">
+    <h1 id="tit">Portfolio Manager</h1>
+    <div id="container">
+        <form id="portfolio_input">
+            <table>
+                <tr>
+                    <th>Stock</th>
+                    <th>Position</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="stock" required></td>
+                    <td><input type="text" id="position" list="position_type" required></td>
+                    <datalist id="position_type">
+                        <option value="Long">
+                        <option value="Short">
+                    </datalist>
+                    <td><input type="number" id="price" required></td>
+                    <td><input type="number" id="quantity" required></td>
+                    <td><input type="button" class="add_trade" onclick="open_trade()" value="OPEN"></td>
+                </tr>
+            </table>
         </form>
-    </section>
+    </div>
 
-    <footer>
-        <div class="fleft">
-            <ul>
-                <li>Reforma's</li>
-                <li>England, London 3443 St</li>
-                <li>150 Piccadilly, St. James's</li>
-                <li>N0L 1G0</li>
-            </ul>
+    <div id="content_container">
+        <div>
+            <table id="portfolio">
+            </table>
         </div>
-        <div class="infof">
-            <div class="innerf left">
-                <ul>
-                    <li>About us</li>
-                    <li><a href="#">Who we are</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Work with us</a></li>
-                </ul>
-            </div>
-            <div class="innerf right">
-                <ul>
-                    <li>Follow us</li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./index.js" type="text/javascript"></script>
 </body>
 
 </html>
