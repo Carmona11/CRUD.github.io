@@ -1,28 +1,60 @@
-let orders = []
+// Funciones para calcular el total 
+let previewPrice = document.getElementById("priceInput");
+let previewAmount = document.getElementById("amountInput");
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    loadAllTrades()
-})
+previewPrice.addEventListener('input', (event) => {
+    const totalPreview = document.getElementById('totalInput');
+    totalPreview.placeholder = '$' + previewPrice.value * previewAmount.value;
+});
 
-function open_trade() {
-    //Creamos nuestras variables
-    var stock = document.getElementById("stock").value;
-    var position = document.getElementById("position").value;
-    var price = document.getElementById("price").value;
-    var quantity = document.getElementById("quantity").value;
-    var total = quantity * price
+previewAmount.addEventListener('input', (event) => {
+    const totalPreview = document.getElementById('totalInput');
+    totalPreview.placeholder = '$' + previewPrice.value * previewAmount.value;
+});
 
-    //Validamos que haya info y la cargamos a [orders]
-    if (stock && position && price && quantity != "") {
-        let table = document.getElementById("portfolio")
-        let table_len = (table.rows.length) - 1;
-        let row = table.insertRow(table_len)
-        row.insertCell(0).innerHTML = stock
-        row.insertCell(1).innerHTML = position
-        row.insertCell(2).innerHTML = price
-        row.insertCell(3).innerHTML = quantity
-        row.insertCell(4).innerHTML = total
-        row.insertCell(5).innerHTML = '<button>Eliminar</button>' + 
-        '<button>Editar</button>'
-    }
+// Variable Globales
+function Submit() {
+    var dataEntered = orderInput();
+    var readOrders = readingDataFromLocalStorage(dataEntered);
+    insert(readOrders)
 }
+
+// CREATE
+// Obtenemos data del Form
+function orderInput() {
+    var stock = document.getElementById("stockInput").value;
+    var position = document.getElementById("positionInput").value;
+    var price = document.getElementById("priceInput").value;
+    var amount = document.getElementById("amountInput").value;
+    var total = price * amount;
+
+    var orderPlaced = [stock, position, price, amount, total];
+    return orderPlaced;
+}
+
+// READ
+// Ordenes en el LocalStorage
+function readingDataFromLocalStorage(dataEntered) {
+    // Almacenamos ordenes en el LocalStorage
+    var st = localStorage.setItem("Stock", dataEntered[0]);
+    var po = localStorage.setItem("Position", dataEntered[1]);
+    var pr = localStorage.setItem("Price", dataEntered[2]);
+    var am = localStorage.setItem("Amount", dataEntered[3]);
+    var to = localStorage.setItem("Total", dataEntered[4]);
+
+    // Obtenemos valores del LocalStorage a la tabla
+    var st1 = localStorage.getItem("Stock", st);
+    var po1 = localStorage.getItem("Position", po);
+    var pr1 = localStorage.getItem("Price", pr);
+    var am1 = localStorage.getItem("Amount", am);
+    var to1 = localStorage.getItem("Total", to);
+
+    var orderPlaced = [st1, po1, pr1, am1, to1];
+    return orderPlaced;
+}
+
+// INSERT
+function insert(readOrders) {
+    var row = orderList.insertRow();
+}
+
