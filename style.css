@@ -5,6 +5,7 @@ html {
 section {
     height: 100%;
     width: 75vw;
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,21 +31,13 @@ color: rgb(0, 225, 255);
 .orderControl {
     margin-top: 50px;
     width: 100%;
+
 }
 
 #orderTable {
     margin-top: 50px;
     width: 100%;
-    border: 1px solid red;
 }
-
-
-
-
-
-
-
-
 
 
 

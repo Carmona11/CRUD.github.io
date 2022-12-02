@@ -39,16 +39,16 @@
                         </tr>
                     </thead>
                     <tbody class="tableInputs">
-                        <td><input class="form-control" type="text" id="stockInput" name="myStock" placeholder="Ticker">
+                        <td><input class="form-control" type="text" id="stockInput" name="myStock" placeholder="Ticker" required>
                         </td>
-                        <td><select class="form-select" name="Position" id="positionInput">
+                        <td><select class="form-select" name="Position" id="positionInput" required>
                                 <option value="Long">Long</option>
                                 <option value="Short">Short</option>
                             </select></td>
                         <td><input class="form-control" type="number" id="priceInput" min="0" name="Price"
-                                placeholder="Enter price"></td>
+                                placeholder="Enter price" required></td>
                         <td><input class="form-control" type="number" id="amountInput" min="0" name="Amount"
-                                placeholder="Enter amount"></td>
+                                placeholder="Enter amount" required></td>
                         <td><input class="form-control" type="number" id="totalInput" name="Amount"
                                 placeholder="Enter amount" disabled></td>
                         <td><input type="button" class="btn btn-primary" value="Submit" id="btn" onclick="Submit()">
@@ -59,7 +59,7 @@
         </div>
 
         <div id="orderTable">
-            <table class="table">
+            <table class="table" id="table">
                 <thead>
                     <tr>
                         <th scope="col">Stock</th>

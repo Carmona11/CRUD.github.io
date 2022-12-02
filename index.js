@@ -16,7 +16,7 @@ previewAmount.addEventListener('input', (event) => {
 function Submit() {
     var dataEntered = orderInput();
     var readOrders = readingDataFromLocalStorage(dataEntered);
-    insert(readOrders)
+    insert(readOrders);
 }
 
 // CREATE
@@ -54,7 +54,16 @@ function readingDataFromLocalStorage(dataEntered) {
 }
 
 // INSERT
-function insert(readOrders) {
-    var row = orderList.insertRow();
+function insert(readOrders){
+    var table = document.getElementById("orderList");
+    var row = table.insertRow().innerHTML = 
+    '<tr><td>'+readOrders[0]+'</td><td>'+readOrders[1]+'</td><td>'+"$"+readOrders[2]+'</td><td>'+readOrders[3]+'</td><td>'+"$"+readOrders[4]+'</td><button type="button" class="btn btn-warning" onclick = edit(this)>Edit</button><button type="button" class="btn btn-danger">Delete</button></tr>';
+
 }
+
+
+
+
+
+
 
