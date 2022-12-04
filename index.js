@@ -1,4 +1,5 @@
 // Funciones para calcular el total 
+// Funciones para calcular el total 
 let previewPrice = document.getElementById("priceInput");
 let previewAmount = document.getElementById("amountInput");
 
@@ -8,9 +9,7 @@ previewPrice.addEventListener('input', (event) => {
 });
 
 previewAmount.addEventListener('input', (event) => {
-    console.log("EJECUTE")
     const totalPreview = document.getElementById('totalInput');
-    console.log(console.log(totalPreview))
     totalPreview.placeholder = '$' + previewPrice.value * previewAmount.value;
 });
 
@@ -102,13 +101,7 @@ function update() {
 function deleteOrder(index) {
     const orders = JSON.parse(localStorage.getItem("orders"));
     orders.splice(index, 1);
+    msg.innerHTML = "Order Deleted!";
     localStorage.setItem("orders", JSON.stringify(orders));
     updateRows()
-
-
 }
-
-
-
-
-
